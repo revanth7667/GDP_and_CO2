@@ -23,7 +23,9 @@ data_req = data_req.rename(
 )
 
 plt.scatter(
-    x=data_req.morality,
-    y=data_req.gdp,
+    x=data_req.gdp,
+    y=data_req.morality,
 )
+plt.xlabel("GDP per capita (constant 2010 US$)")
+plt.ylabel("Mortality rate, infant (per 1,000 live births)")
 plt.show()
